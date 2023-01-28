@@ -19,4 +19,7 @@ public class BlueRentalLoginPage {
     @FindBy(xpath="//div[@role='alert']")
     public WebElement error_message_1;
 
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[1]")
+    public WebElement email_error_message;
+
 }

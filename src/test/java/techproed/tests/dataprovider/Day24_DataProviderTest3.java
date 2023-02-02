@@ -1,5 +1,6 @@
 package techproed.tests.dataprovider;
 
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import techproed.pages.BlueRentalHomePage;
@@ -51,5 +52,4 @@ public class Day24_DataProviderTest3 {
         blueRentalHomePage.OK.click();
         Driver.closeDriver();
     }
-
 }

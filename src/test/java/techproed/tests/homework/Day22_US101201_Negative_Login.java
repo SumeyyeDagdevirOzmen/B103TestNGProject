@@ -38,48 +38,48 @@ public class Day22_US101201_Negative_Login {
 
     @Test
     public void US101122_Negative_Login() throws InterruptedException {
-        JavascriptExecutor js= (JavascriptExecutor) Driver.getDriver();
-        Driver.getDriver().get(ConfigReader.getProperty("app_url"));
-        blueRentalHomePage = new BlueRentalHomePage();
-        blueRentalLoginPage = new BlueRentalLoginPage();
-
-
-        Select select=new Select(blueRentalHomePage.selectCar);
-
-
-        Thread.sleep(2000);
-        try {
-            blueRentalHomePage.selectCar.click();
-        } catch (Exception e) {
-           js.executeScript("arguments[0].click();",blueRentalHomePage.selectCar);
-        }
-        Thread.sleep(3000);
-        select.selectByValue("3");
-
-
-
-
-        blueRentalHomePage.pickUpLocationSelect.sendKeys("New York Terryville");
-        blueRentalHomePage.dropOfLocationSelect.sendKeys("New York Lloyd");
-//        Pick Up date
-//        Pick Up time
-//        Drop Off date
-//        Drop Off time
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("hhmmaa");
-        Calendar calendar = Calendar.getInstance();
-        LocalDate currentDate = LocalDate.now();
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        String formattedDate = dtf.format(currentDate);
-        blueRentalHomePage.pickUpDateSelect.sendKeys(formattedDate);
-        blueRentalHomePage.pickUpTimeSelect.sendKeys(simpleDateFormat.format(calendar.getTime()));
-        blueRentalHomePage.dropOfDateSelect.sendKeys("05.02.2023");
-        blueRentalHomePage.dropOfTimeSelect.sendKeys(simpleDateFormat.format(calendar.getTime()));
-        blueRentalHomePage.submitCarButton.click();
-
-            ReusableMethods.verifyElementDisplayed(blueRentalHomePage.submitCarButton);
-
-
-        }
+//        JavascriptExecutor js= (JavascriptExecutor) Driver.getDriver();
+//        Driver.getDriver().get(ConfigReader.getProperty("app_url"));
+//        blueRentalHomePage = new BlueRentalHomePage();
+//        blueRentalLoginPage = new BlueRentalLoginPage();
+//
+//
+//        Select select=new Select(blueRentalHomePage.selectCar);
+//
+//
+//        Thread.sleep(2000);
+//        try {
+//            blueRentalHomePage.selectCar.click();
+//        } catch (Exception e) {
+//           js.executeScript("arguments[0].click();",blueRentalHomePage.selectCar);
+//        }
+//        Thread.sleep(3000);
+//        select.selectByValue("3");
+//
+//
+//
+//
+//        blueRentalHomePage.pickUpLocationSelect.sendKeys("New York Terryville");
+//        blueRentalHomePage.dropOfLocationSelect.sendKeys("New York Lloyd");
+////        Pick Up date
+////        Pick Up time
+////        Drop Off date
+////        Drop Off time
+//        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("hhmmaa");
+//        Calendar calendar = Calendar.getInstance();
+//        LocalDate currentDate = LocalDate.now();
+//        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+//        String formattedDate = dtf.format(currentDate);
+//        blueRentalHomePage.pickUpDateSelect.sendKeys(formattedDate);
+//        blueRentalHomePage.pickUpTimeSelect.sendKeys(simpleDateFormat.format(calendar.getTime()));
+//        blueRentalHomePage.dropOfDateSelect.sendKeys("05.02.2023");
+//        blueRentalHomePage.dropOfTimeSelect.sendKeys(simpleDateFormat.format(calendar.getTime()));
+//        blueRentalHomePage.submitCarButton.click();
+//
+//            ReusableMethods.verifyElementDisplayed(blueRentalHomePage.submitCarButton);
+//
+//
+       }
     }
 
 

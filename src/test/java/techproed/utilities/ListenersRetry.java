@@ -21,8 +21,10 @@ public class ListenersRetry implements IRetryAnalyzer {
 3. Sonuc : Eger herhangi bir test case FAIL olursa, bu test case 3 kez data run edilecektir.
  */
 public class ListenersRetry implements IRetryAnalyzer {
+    // Bu sinif SADECE FAIL OLAN TEST CASE LERI TEKRAR CALISTIRIR
     private int retryCount = 0;
-    private static final int maxRetryCount = 2;
+    // maxRtryCount EK OLARAK CALISMA SAYISI. BU ORNEKDE KALAN TESTLER EKSTRA 1 KEZ DAHA CALISIR
+    private static final int maxRetryCount = 1;
 
     @Override
     public boolean retry(ITestResult result) {

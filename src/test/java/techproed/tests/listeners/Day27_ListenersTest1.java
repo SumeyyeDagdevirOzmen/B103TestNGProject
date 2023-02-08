@@ -1,5 +1,6 @@
 package techproed.tests.listeners;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
@@ -7,6 +8,7 @@ import org.testng.SkipException;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import techproed.utilities.Driver;
+
 
 @Listeners(techproed.utilities.Listeners.class)//extent etmeye gerek kalmadi
 
@@ -39,7 +41,7 @@ public class Day27_ListenersTest1 {
     @Test
     public void test4(){
         System.out.println("EXCEPTION");
-   //     throw new NoSuchElementException("No Such Element Exception");
+      // throw new NoSuchElementException("No Such Element Exception");
         Driver.getDriver().get("https://www.techproeducation.com");
         Driver.getDriver().findElement(By.xpath("asdgadfhadfgnh"));
     }

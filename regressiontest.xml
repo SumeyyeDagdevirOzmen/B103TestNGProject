@@ -1,7 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="minor regression" verbose="2">
+<!--    <suite name="minor regression" verbose="2" parallel="classes" thread-count="3">-->
     <listeners>
-        <listener class-name="techproed.utilities.ListenersRetryAnalyzer"></listener>
+        <listener class-name="techproed.utilities.ListenersRetryAnalyzer">  </listener>
     </listeners>
     <test name="Regression1">
         <packages>
@@ -9,3 +10,4 @@
         </packages>
     </test>
 </suite>
+<!--Tum test caseleri calistirdik bu xml dosyasi ile-->
